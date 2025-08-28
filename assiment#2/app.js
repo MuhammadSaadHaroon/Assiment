@@ -4,19 +4,14 @@ Apple: ["iPhone 12", "iPhone 13", "iPhone 14"],
 Xiaomi: ["Redmi 12", "Poco X6", "Mi 11"]
 };
 
-
 const brand = document.getElementById("brand");
 const model = document.getElementById("model");
 const result = document.getElementById("result");
 
-
-// Fill brand list
 for (let b in phones) {
 brand.innerHTML += `<option value="${b}">${b}</option>`;
-}
+};
 
-
-// When brand changes -> load models
 brand.onchange = () => {
 model.innerHTML = '<option value="">Select Model</option>';
 if (brand.value) {
@@ -29,8 +24,6 @@ model.disabled = true;
 }
 };
 
-
-// Show result on search
 document.getElementById("search").onclick = () => {
 if (!brand.value || !model.value) {
 alert("Please select brand and model");
