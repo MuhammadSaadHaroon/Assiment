@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>News App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>News App</h1>
+  <div class="controls">
+    <input id="query" placeholder="Search news (e.g. bitcoin)">
+    <select id="country">
+      <option value="us">US</option>
+      <option value="gb">UK</option>
+      <option value="pk">PK</option>
+      <option value="in">IN</option>
+    </select>
+    <button id="searchBtn">Search</button>
+  </div>
+  <div id="message" class="message">Tip: get a free API key from https://newsapi.org and set it in config.js</div>
+  <div id="results" class="results"></div>
+</div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
